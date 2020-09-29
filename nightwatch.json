@@ -1,0 +1,21 @@
+{
+	"src_folders" : ["tests"],
+	"webdriver": {
+    "start_process" : true,
+    "server_path": "../../node_modules/geckodriver/geckodriver",
+    "cli_args": [
+      "--log", "debug"
+    ]
+  },
+	"page_objects_path" : "./tests/objects",
+	"test_settings" : {
+		"default" : {
+			"launch_url" : "https://www.letapolise.lv/lv",
+			"desiredCapabilities": {
+				 "browserName" : "firefox",
+				 "acceptInsecureCerts": true
+			 }
+			}
+	}
+
+}
